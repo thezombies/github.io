@@ -4,17 +4,32 @@
 1. 데이터 불러오기
 
 > 개발환경 만들기
+  >>  pd.options.display.max_columns = 
+  >>  pd.options.display.max_rows = 
+  
 > 데이터 불러오기 (특정 컬럼만 불러오기)
 > 인덱스 지정하기
+  > df.set_index('')
+  > df.reset_index('')
+  
 > 톺아보기
-
+  
 
 
 2. 데이터 정제하기
 
 > 컬럼명 바꾸기
+  >> df.rename({'a':'b'), axis = 'columns')
+  >> df.columns = df.columns.str.replace('','')
+  
+  
 > 데이터타입 바꾸기
+> 결측치처리 
+  >> def > apply 하는데, np에서, np.nan / np.fillna() / np.fillna(0)
+
 > apply로 문자형 바꾸기
+  >> def if a == '' : return '' > apply 
+  
 > apply로 연산 적용하기
 > 데이터를 분류하기 (ref. CASE WHEN)
 
