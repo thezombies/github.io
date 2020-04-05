@@ -40,7 +40,13 @@
   >> def if a == '' : return '' > apply 
   
 > apply로 연산 적용하기
-> 데이터를 분류하기 (ref. CASE WHEN)
+  >> 데이터를 분류하기 (ref. CASE WHEN)
+
+> apply for many x by using lambda
+  >> def sample(x,y):
+      return x+y
+      
+     df['new'] = df.apply(lambda x : sample(df["x"]i, df["y"]))
 
 
 
