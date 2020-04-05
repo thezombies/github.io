@@ -46,7 +46,7 @@
   >> def sample(x,y):
       return x+y
       
-     df['new'] = df.apply(lambda x : sample(df["x"]i, df["y"]))
+     df['new'] = df.apply(lambda x : sample(df["x"]i, df["y"]), axis =1)
 
 
 
