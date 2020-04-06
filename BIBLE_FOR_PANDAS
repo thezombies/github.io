@@ -46,7 +46,30 @@
   >> def sample(x,y):
       return x+y
       
-     df['new'] = df.apply(lambda x : sample(df["x"]i, df["y"]), axis =1)
+     df['new'] = df.apply(lambda x : sample(df["x"]i, df["y"]), axis =1) # pandas에서 axis = 0은 index, 1은 column내 values 즉 series를 뜻한다.
+
+  >> lambda는 필터로도 기능한다
+      e.g. df['sample'] = df.apply(lambda x : return Z if x is none, axis = 1)
+
+> dataframe에서 null을 비교하는 걸 isnull()이라고 한다면,
+  >> value에서의 nan을 판별하는 건, is none 이다
+
+> dataframe에서 between은
+  >> vlaue 에서는 10 <= value < 12 이다
+  
+  def invalid(status, height, initial_weight, lowest_weight, target_weight, BMI, loss_goal):
+    if status != 'completed':
+        return False
+    elif (status == "compelted") \
+        & (height is None) & (initial_weight is None) & (lowest_weight is None)\
+        & (140<= height <= 200)&(18.5<= BMI <= 30)&(loss_goal < 0):
+           return False
+    else:
+           return True
+
+> progress_apply를 써서, 진행도를 바그래프 및 시간으로 정리하는 법
+ >> from tqdm import tqdm
+     tqdm.pandas 후에, progress_apply처리
 
 
 
