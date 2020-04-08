@@ -72,7 +72,17 @@
 > progress_apply를 써서, 진행도를 바그래프 및 시간으로 정리하는 법
  >> from tqdm import tqdm
      tqdm.pandas 후에, progress_apply처리
-
+     
+     
+> pivot table에 대하여 == pd.pivot_table(df, index = , values, columns = 
+     : pd.pivot_table의 방법과 groupby()의 방법이 있습니다.
+     : 전자는 모양, 후자는 속도에 강점이 있음.
+     : pd.pivot_table 의 결과물 역시, DataFrame임.
+      > 즉, 컬럼을 가공 및 결합하여, 다른 컬럼을 만들 수 있음 >> 그래서, Total이나, Conversion을 쉽게 구할 수 있음.
+      > 다만, groupby와 섞어서 쓰면, 보다 쉽게 접근할 수 있을 것 같음
+      >> 그래서, groupby 역시 친숙해지길.
+      
+      
 
 
 
