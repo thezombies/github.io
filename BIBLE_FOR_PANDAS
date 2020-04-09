@@ -89,6 +89,9 @@
 
 
 > 전치행렬 T
-     : 복수의 컬럼명을 하나의 컬럼값으로 만드는 법?
+     : 복수의 컬럼명(one hot encoding시)을 하나의 컬럼값으로 만드는 법!
+     
+      a = pd.pivot_table(good_coach, index = ['Status'], values = good_coach_coloumns,  aggfunc='sum', fill_value= 0)
+      > a.T
 
 
