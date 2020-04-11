@@ -95,4 +95,8 @@
       > a.T
 
 
-ㅌ
+> 데이터 타입에 대하여
+: 날짜형  pd.to_date(df[''])
+
+> 정렬에 대하여
+: .sort(by = , ascending = True)
