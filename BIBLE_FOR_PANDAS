@@ -55,6 +55,9 @@
   >> value에서의 nan을 판별하는 건, x != x였다...(is None이기도 하는데, 결국 apply에서는 적용되지 못했다)
   >> 방법은 replace(np.nan, -1) 로 하고, -1을 이용해 함수를 만들고 > apply를 하는 것.
   >> 요 간단한 것 때문에, 몇 시간을 잡아먹었는지.......ㅠㅠ
+  
+  >> 그리고 해설에서는...pd.isnull(df["Age(clean)']) 으로 해서, True / False를 판단하는 것이었다....
+
 
 > dataframe에서 between은
   >> vlaue 에서는 10 <= value < 12 이다
