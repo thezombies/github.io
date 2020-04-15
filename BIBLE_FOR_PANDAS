@@ -127,5 +127,14 @@ test(dumy) 를 실행, 결과값을 확인해봄.
 
 > duplicatae_drop(option = 'last'
 : 더는 row_numbers() 먹혀서 작업하지 않아도 되는 즐거움
-: 깃허브, 깃 그리고 노션으로의 정리 작업 시작랭ㅋ
 : 깃허브, 깃 그리고 노션으로의 정리 작업 시작
+
+> 문자열 정제
+: split 그리고 join
+: split 후에 앞 혹은 뒤의 것만 선택하기 [0]
+
+> lambda 활용
+: (lambda x : return True if x 조건 else False) 
+
+
+
