@@ -136,5 +136,10 @@ test(dumy) 를 실행, 결과값을 확인해봄.
 > lambda 활용
 : (lambda x : return True if x 조건 else False) 
 
+> 컬럼간 비교 True / Faslse
+: a['TF'} = a['created_at'] > a['changed_at'] 
+: True/False로 리턴
 
+> 여러 조건 적용
+: (df['a'] > b)|(df['c'] == d)
 
