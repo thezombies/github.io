@@ -149,4 +149,8 @@ test(dumy) 를 실행, 결과값을 확인해봄.
 : drop.na 활용
 : apply 변형
 
+> value_counts()를 정의하고, 이를 필터로 이용하는 방법
+> merge의 연속
+> dt.components 등의 시간 관련 정리
+
 
