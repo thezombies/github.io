@@ -145,6 +145,9 @@ test(dumy) 를 실행, 결과값을 확인해봄.
 
 > solution으로부터 배울 것
 : loc로 컬럼과 로우 지정하는 방법
+ >> 멀티인덱서 xs 활용방법 : 피벗테이블에서 특정 열 지정에 편리
+https://yganalyst.github.io/study/Pd_14/
+
 : for문을 이용해서, 반복된 컬럼명을 만드는 방법
 : drop.na 활용
 : apply 변형
