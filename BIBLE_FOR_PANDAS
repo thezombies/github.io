@@ -156,4 +156,6 @@ https://yganalyst.github.io/study/Pd_14/
 > merge의 연속
 > dt.components 등의 시간 관련 정리
 
+> 컬럼 정렬 
+: .sort_index(axis = 1, ascending = True)
 
