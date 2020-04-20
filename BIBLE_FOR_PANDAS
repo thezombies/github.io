@@ -147,6 +147,7 @@ test(dumy) 를 실행, 결과값을 확인해봄.
 : loc로 컬럼과 로우 지정하는 방법
  >> 멀티인덱서 xs 활용방법 : 피벗테이블에서 특정 열 지정에 편리
 https://yganalyst.github.io/study/Pd_14/
+https://pandas.pydata.org/docs/user_guide/reshaping.html
 
 : for문을 이용해서, 반복된 컬럼명을 만드는 방법
 : drop.na 활용
@@ -159,3 +160,9 @@ https://yganalyst.github.io/study/Pd_14/
 > 컬럼 정렬 
 : .sort_index(axis = 1, ascending = True)
 
+
+> 시각화 기본 옵션
+: import matplotlib.pyplot as plt
+: plt.figure(figsize = [20,5]
+
+> 한 화면에 여러 시각화 만들기
