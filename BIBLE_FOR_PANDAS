@@ -166,3 +166,6 @@ https://pandas.pydata.org/docs/user_guide/reshaping.html
 : plt.figure(figsize = [20,5]
 
 > 한 화면에 여러 시각화 만들기
+
+> 판다스로 SQL - WHERE & IN 구현하기
+
