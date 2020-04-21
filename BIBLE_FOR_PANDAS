@@ -169,3 +169,5 @@ https://pandas.pydata.org/docs/user_guide/reshaping.html
 
 > 판다스로 SQL - WHERE & IN 구현하기
 
+: df['TF'] = df['col1'].apply(lambda x : x in df_2['col1'].unique(O)
+: df[df['TF'] = True]
