@@ -168,7 +168,7 @@ https://pandas.pydata.org/docs/user_guide/reshaping.html
 > 한 화면에 여러 시각화 만들기
 
 평범!
-figure, ((ax1,ax2,ax3),(bx1,bx2,bx3))plt.subplots(nrows = n, ncols = n')
+figure, ((ax1,ax2,ax3),(bx1,bx2,bx3)) = plt.subplots(nrows = n, ncols = n')
 figure.set_size_inches(18.3)
 
 
