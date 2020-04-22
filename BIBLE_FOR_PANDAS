@@ -203,3 +203,6 @@ matplotlib.rc('axe', unicode_minus = False)
 > 사이즈 조절하기
 
 import matplotlib.pyplot as plt
+
+> 연령대
+: 연령//10 
