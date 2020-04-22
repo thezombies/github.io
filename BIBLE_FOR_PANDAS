@@ -163,11 +163,38 @@ https://pandas.pydata.org/docs/user_guide/reshaping.html
 
 > 시각화 기본 옵션
 : import matplotlib.pyplot as plt
-: plt.figure(figsize = [20,5]
+: plt.figure(figsize = [20,5])
 
 > 한 화면에 여러 시각화 만들기
+
+평범!
+figure, ((ax1,ax2,ax3),(bx1,bx2,bx3))plt.subplots(nrows = n, ncols = n')
+figure.set_size_inches(18.3)
+
+
+컬럼간 간접적인 관계를 파악할 때!
+figure, axes = plt.subplots(nrows = 3, ncols = 10)
+axes = [3][1] 등으로 받아서 지정할 수 있음
+
 
 > 판다스로 SQL - WHERE & IN 구현하기
 
 : df['TF'] = df['col1'].apply(lambda x : x in df_2['col1'].unique(O)
 : df[df['TF'] = True]
+
+
+> 한글깨짐 / 선명하게 / minus 기호 깨짐 방지
+:
+import matplotlib
+matplotlib.rc('font', family = 'NanumGothic')
+matplotlib.rc('font', family = 'AppleGothic')
+
+from Ipython.display import set_matplotlib_formats 
+
+set_matplotlib_formats('retina')
+
+matplotlib.rc('axe', unicode_minus = False)
+
+> 사이즈 조절하기
+
+import matplotlib.pyplot as plt
