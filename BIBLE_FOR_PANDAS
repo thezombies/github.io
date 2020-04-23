@@ -169,7 +169,7 @@ https://pandas.pydata.org/docs/user_guide/reshaping.html
 
 평범!
 figure, ((ax1,ax2,ax3),(bx1,bx2,bx3)) = plt.subplots(nrows = n, ncols = n')
-figure.set_size_inches(18,3)
+figure.set_size_inches(18,3) --왜 = (a,b) 라고 생각했을까나.
 
 sns.countplot(data = data, x = "성별코드", ax = ax1)
 sns.countplot(data = data, x = "연령코드", ax = ax2) --> 요런 식으로 열을 지정해줄 수 있음 (행도 가능할까?)
