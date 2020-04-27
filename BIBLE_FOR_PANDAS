@@ -206,3 +206,12 @@ import matplotlib.pyplot as plt
 
 > 연령대
 : 연령//10 
+
+> apply의 각 행별 적용 (조건이 dataframe의 여러 컬럼에 걸쳐있을 때)
+: df.apply(def, axis = 1) 로 지정
+: def def(row):
+  if row['col01'] == '의류' and row['연령대'] == '미입력':
+     return True
+  else:
+     return row['연령대'] in str(row['age_y'])
+     
