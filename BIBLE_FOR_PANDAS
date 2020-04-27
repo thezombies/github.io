@@ -215,3 +215,6 @@ import matplotlib.pyplot as plt
   else:
      return row['연령대'] in str(row['age_y'])
      
+  columns index
+  apply to rows as well as columns
+     
