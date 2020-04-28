@@ -216,5 +216,10 @@ import matplotlib.pyplot as plt
      return row['연령대'] in str(row['age_y'])
      
   columns index
-  apply to rows as well as columns
-     
+: df.iloc[:,:]
+
+apply to rows as well as columns
+>> apply (axis = 0, axis = 1)
+
+
+
