@@ -222,4 +222,6 @@ apply to rows as well as columns
 >> apply (axis = 0, axis = 1)
 
 
+:: 데이터구조, 알고리즘부터 다시 공부하자...ㅠㅠ
+>> week4의 for문 및 dataframe의 인덱싱을 해결할 수 있을 때까지.
 
