@@ -221,7 +221,15 @@ import matplotlib.pyplot as plt
 apply to rows as well as columns
 >> apply (axis = 0, axis = 1)
 
+> where in similiar to in (series.index)
+
+> for i in range:
+    'f {i}'
+
 > 조건문에서의 any 활용
+
+
+
 
 
 :: 데이터구조, 알고리즘부터 다시 공부하자...ㅠㅠ
