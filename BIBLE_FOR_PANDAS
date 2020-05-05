@@ -251,4 +251,9 @@ print(a)
 B = []
 for rank in range(1,11):
   for keyword in range(1,5):
-    A = 
+    A = [rank, keyword]
+    B += [A]
+    
+data = pd.DataFrame(B)
+data.columns = ['rank','keyword']
+data
