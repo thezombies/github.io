@@ -257,3 +257,6 @@ for rank in range(1,11):
 data = pd.DataFrame(B)
 data.columns = ['rank','keyword']
 data
+
+>> value_counts()를 슬기롭게 쓰는 방법 : 비중을 보고 판단한다.
+.apply(lambda x : len(x)).value_counts(normalize = True)
