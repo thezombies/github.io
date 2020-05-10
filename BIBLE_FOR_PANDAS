@@ -260,3 +260,8 @@ data
 
 >> value_counts()를 슬기롭게 쓰는 방법 : 비중을 보고 판단한다.
 .apply(lambda x : len(x)).value_counts(normalize = True)
+
+
+>> groupby의 결과를 raw_data_table에 컬럼으로 넣기
+df['new_col'] = df.groupby('index')['value_col'].transform('sum')
+
