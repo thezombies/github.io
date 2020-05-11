@@ -265,3 +265,5 @@ data
 >> groupby의 결과를 raw_data_table에 컬럼으로 넣기
 df['new_col'] = df.groupby('index')['value_col'].transform('sum')
 
+>> 무엇을 어떻게 분석해보고 싶을까?
+
