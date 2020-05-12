@@ -267,3 +267,6 @@ df['new_col'] = df.groupby('index')['value_col'].transform('sum')
 
 >> 무엇을 어떻게 분석해보고 싶을까?
 
+
+>> python advanced class => high quality!
+
