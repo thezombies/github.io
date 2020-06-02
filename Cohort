@@ -10,12 +10,12 @@ df['MonthPassed'] = (df['Month'].dt.year - df['StartedMonth'].dt.year)/12 + (df[
 
 Step3.시작점 그리고 차이별 집계
 
-cohort_df  = df.groupby(['StartedMonth','MonthPassed'])['ID'].apply(lambda x: count(unique(x)).reset_index()
+cohort_df  = df.groupby(['StartedMonth','MonthPassed'])['ID'].apply(lambda x: len(np.unique(x)).reset_index()
 
 Step4.도표화
 
 cohort_df = cohort_df.pivot(index = 'StartedMonth', columns = 'MonthPassed', values = 'ID')
-
+cohort_df = cohotr_df.div(cohort_df.iloc[:,0], axis = 0)*100
 Step5.도식화
 
 sns.heatmap
