@@ -1,0 +1,21 @@
+
+Step1.시작의 기준점 잡기
+
+df['StartedMonth'] = df.groupby('ID')['Month'].tranform(np.min)
+
+
+Step2.기준점으로부터의 차이 계산
+
+df['MonthPassed'] = (df['Month'].dt.year - df['StartedMonth'].dt.year)/12 + (df['Month'].dt.month - df['StartedMonth'].dt.month)
+
+Step3.시작점 그리고 차이별 집계
+
+cohort_df  = df.groupby(['StartedMonth','MonthPassed'])['ID'].apply(lambda x: count(unique(x)).reset_index()
+
+Step4.도표화
+
+cohort_df = cohort_df.pivot(index = 'StartedMonth', columns = 'MonthPassed', values = 'ID')
+
+Step5.도식화
+
+sns.heatmap
