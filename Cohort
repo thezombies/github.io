@@ -1,4 +1,6 @@
 
+#1. cohort_timeline
+
 Step1.시작의 기준점 잡기
 
 df['StartedMonth'] = df.groupby('ID')['Month'].tranform(np.min)
@@ -19,3 +21,25 @@ cohort_df = cohotr_df.div(cohort_df.iloc[:,0], axis = 0)*100
 Step5.도식화
 
 sns.heatmap
+
+
+#2. cohort_ABC
+
+Step1. groupby에 함수를 넣어도 됩니다
+
+retail.set_index('InvoiceDate').groupby(['StockCode',extract_month])[['Quantity','CheckoutPrice']].sum().loc[top_selling.index]
+rev_by_dow = retail.set_index('InvoiceDate').groupby(lambda date : date.dayofweek)['CheckoutPrice'].sum()
+
+Step99. 시각화를 함수로 만들기
+
+def plot_bar(df, xlabel, ylabel, title, color=COLORS[-1], figsize = (20,10) , rotation = 45):
+
+    plot = df.plot(kind = 'bar', color = color , figsize = figsize)
+    plot.set_xlabel(xlabel, fontsize = 11)
+    plot.set_ylabel(ylabel, fontsize = 11)
+    plot.set_title(title, fontsize = 11)
+    plot.set_xticklabels(labels = df.index, rotation = rotation)
+
+
+
+
